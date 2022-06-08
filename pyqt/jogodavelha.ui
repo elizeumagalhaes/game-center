@@ -449,7 +449,8 @@ color: rgb(255, 255, 255);</string>
    </property>
    <property name="styleSheet">
     <string notr="true">color: rgb(0, 0, 0);
-background-color: rgb(255, 255, 0);</string>
+background-color: rgb(255, 255, 0);
+border-radius: 8px;</string>
    </property>
    <property name="text">
     <string>Play Again</string>
@@ -485,7 +486,7 @@ color: rgb(255, 255, 255);</string>
     <rect>
      <x>220</x>
      <y>40</y>
-     <width>61</width>
+     <width>71</width>
      <height>41</height>
     </rect>
    </property>

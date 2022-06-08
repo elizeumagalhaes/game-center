@@ -54,11 +54,15 @@
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
     <property name="styleSheet">
-     <string notr="true">background-color: rgb(10, 9, 11);
-color: white;
-border-radius: 10px;
-border: 2px dashed rgb(170, 85, 255);
-</string>
+     <string notr="true">QPushButton{
+	background-color: rgb(10, 9, 11);
+	color: white;
+	border-radius: 10px;
+	border: 2px dashed rgb(170, 85, 255);
+}
+QPushButton:hover{
+	rgb(166, 255, 0)
+}</string>
     </property>
     <property name="text">
      <string>Hangman Game</string>
