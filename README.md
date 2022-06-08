@@ -1,2 +1,2 @@
 # games-central
-A games central made with Python and PyQt5.
+A games central made with PyQt5.
