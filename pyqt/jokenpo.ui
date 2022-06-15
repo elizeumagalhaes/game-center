@@ -6,20 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>330</width>
-    <height>450</height>
+    <width>385</width>
+    <height>440</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>330</width>
-    <height>450</height>
+    <width>385</width>
+    <height>440</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>330</width>
-    <height>450</height>
+    <width>385</width>
+    <height>440</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -30,30 +30,30 @@
     <normaloff>../img/flag-japan_1f1ef-1f1f5.png</normaloff>../img/flag-japan_1f1ef-1f1f5.png</iconset>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(0, 0, 0);</string>
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QPushButton" name="btn_stone">
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>50</x>
      <y>160</y>
      <width>71</width>
-     <height>61</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: transparent;
-border: none;</string>
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 6px;</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../img/pedra.png</normaloff>../img/pedra.png</iconset>
+     <normaloff>../img/stone.png</normaloff>../img/stone.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -65,25 +65,25 @@ border: none;</string>
   <widget class="QPushButton" name="btn_paper">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>160</x>
      <y>160</y>
      <width>71</width>
-     <height>61</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: transparent;
-border: none;</string>
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 6px;</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../img/paper1.png</normaloff>../img/paper1.png</iconset>
+     <normaloff>../img/paper.png</normaloff>../img/paper.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -95,25 +95,25 @@ border: none;</string>
   <widget class="QPushButton" name="btn_scissors">
    <property name="geometry">
     <rect>
-     <x>230</x>
+     <x>270</x>
      <y>160</y>
      <width>71</width>
-     <height>61</height>
+     <height>71</height>
     </rect>
    </property>
    <property name="cursor">
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">background-color: transparent;
-border: none;</string>
+    <string notr="true">background-color: rgb(255, 255, 255);
+border-radius: 6px;</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="icon">
     <iconset>
-     <normaloff>../img/tesoura1.png</normaloff>../img/tesoura1.png</iconset>
+     <normaloff>../img/scissors.png</normaloff>../img/scissors.png</iconset>
    </property>
    <property name="iconSize">
     <size>
@@ -131,18 +131,18 @@ border: none;</string>
   <widget class="QLabel" name="lbl_msg">
    <property name="geometry">
     <rect>
-     <x>30</x>
-     <y>300</y>
+     <x>60</x>
+     <y>320</y>
      <width>271</width>
      <height>51</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <family>Bosch Sans Bold</family>
+     <family>Fredoka One</family>
      <pointsize>26</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
+     <weight>50</weight>
+     <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
@@ -156,150 +156,18 @@ color: rgb(255, 255, 255);</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="title_jogo_2">
-   <property name="geometry">
-    <rect>
-     <x>120</x>
-     <y>40</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Bosch Sans Black</family>
-     <pointsize>26</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: transparent;
-color: rgb(255, 255, 255);</string>
-   </property>
-   <property name="text">
-    <string>Joken</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="icon_velha_2">
-   <property name="geometry">
-    <rect>
-     <x>50</x>
-     <y>30</y>
-     <width>61</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: transparent;</string>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../img/flag-japan_1f1ef-1f1f5.png</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="btn_reset">
-   <property name="geometry">
-    <rect>
-     <x>110</x>
-     <y>380</y>
-     <width>111</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Bosch Sans Bold</family>
-     <pointsize>11</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="cursor">
-    <cursorShape>PointingHandCursor</cursorShape>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">color: rgb(255, 255, 255);
-background-color: rgb(199, 0, 86);
-border-radius: 8px;</string>
-   </property>
-   <property name="text">
-    <string>Play Again</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label_4">
-   <property name="geometry">
-    <rect>
-     <x>-260</x>
-     <y>-30</y>
-     <width>811</width>
-     <height>501</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string/>
-   </property>
-   <property name="pixmap">
-    <pixmap>../img/japanese-temple-surrounded-by-nature_52683-46009.webp</pixmap>
-   </property>
-   <property name="scaledContents">
-    <bool>true</bool>
-   </property>
-  </widget>
-  <widget class="QGraphicsView" name="graphicsView_2">
-   <property name="geometry">
-    <rect>
-     <x>-10</x>
-     <y>-10</y>
-     <width>371</width>
-     <height>461</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: rgb(0, 0, 0, 0.3);</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="title_jogo_3">
-   <property name="geometry">
-    <rect>
-     <x>230</x>
-     <y>40</y>
-     <width>51</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Bosch Sans Black</family>
-     <pointsize>26</pointsize>
-     <weight>75</weight>
-     <bold>true</bold>
-    </font>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">background-color: transparent;
-color: rgb(199, 0, 86);</string>
-   </property>
-   <property name="text">
-    <string>Po</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="jogada">
    <property name="geometry">
     <rect>
-     <x>110</x>
-     <y>250</y>
+     <x>140</x>
+     <y>270</y>
      <width>111</width>
      <height>31</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Fredoka One</family>
      <pointsize>11</pointsize>
     </font>
    </property>
@@ -314,17 +182,90 @@ color: white;</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <zorder>label_4</zorder>
-  <zorder>graphicsView_2</zorder>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>90</y>
+     <width>385</width>
+     <height>361</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: qlineargradient(spread:pad, x1:0.506, y1:1, x2:0.494, y2:0, stop:0 rgba(238, 116, 26, 255), stop:1 rgba(246, 151, 16, 255));
+border-radius: 10px;</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_reset">
+   <property name="geometry">
+    <rect>
+     <x>14</x>
+     <y>24</y>
+     <width>111</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Fredoka One</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: #ffffff;
+color: rgb(255, 255, 255);
+background-color: rgb(40, 42, 58);
+border-radius: 7px;</string>
+   </property>
+   <property name="text">
+    <string>Play Again</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lbl_turn_2">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>20</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Fredoka One</family>
+     <pointsize>22</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <kerning>true</kerning>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: transparent;
+color: rgb(40, 42, 58);</string>
+   </property>
+   <property name="text">
+    <string>JokenPo</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
   <zorder>btn_stone</zorder>
   <zorder>btn_paper</zorder>
   <zorder>btn_scissors</zorder>
   <zorder>lbl_msg</zorder>
-  <zorder>title_jogo_2</zorder>
-  <zorder>icon_velha_2</zorder>
-  <zorder>btn_reset</zorder>
-  <zorder>title_jogo_3</zorder>
   <zorder>jogada</zorder>
+  <zorder>btn_reset</zorder>
+  <zorder>lbl_turn_2</zorder>
  </widget>
  <resources/>
  <connections/>

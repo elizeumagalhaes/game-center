@@ -22,7 +22,7 @@ class HangMan(QtWidgets.QMainWindow):
         super(HangMan, self).__init__()
 
         # INICIANDO TELA DO JOGO
-        self.hangman = uic.loadUi("pyqt/jogodaforca.ui")
+        self.hangman = uic.loadUi("pyqt/hangman.ui")
 
         # INICIANDO BOTOES E LABELS
         self.btn_chute = self.hangman.findChild(QPushButton, "btn_chute")
@@ -121,14 +121,20 @@ class HangMan(QtWidgets.QMainWindow):
             self.msg_vitoria.setHidden(False)
             self.anjo.setHidden(False)
             self.lbl_palavra.setText(self.palavra_sorteada)
-            self.msg_vitoria.setText("VOCÊ PERDEU!")
+            self.msg_vitoria.setText("Você perdeu!")
 
     def vitoria(self):
         self.box_chute.setHidden(True)
         self.btn_chute.setHidden(True)
         self.lbl_dica.setHidden(True)
         self.forca.setHidden(True)
+        self.head.setHidden(True)
+        self.camisa.setHidden(True)
+        self.left_arm.setHidden(True)
+        self.right_arm.setHidden(True)
+        self.left_leg.setHidden(True)
+        self.right_leg.setHidden(True)
         self.msg_vitoria.setHidden(False)
         self.trofeu.setHidden(False)
-        self.msg_vitoria.setText("VOCÊ VENCEU!")
+        self.msg_vitoria.setText("Você venceu!")
         self.lbl_palavra.setText(self.palavra_sorteada)

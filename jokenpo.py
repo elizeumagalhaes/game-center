@@ -30,7 +30,7 @@ class JokenPo(QtWidgets.QMainWindow):
         self.btn_reset.clicked.connect(self.reset)
 
         # SORTEIA ALGO
-        self.sortear()
+        self.draw()
 
         # EXIBINDO JANELA
         self.jokenpo.show()
@@ -80,11 +80,11 @@ class JokenPo(QtWidgets.QMainWindow):
         self.user_choice = "scissors"
         self.verify_win()
 
-    def sortear(self):
+    def draw(self):
         JokenPo.choice = random.choice(JokenPo.choices)
 
     def reset(self):
-        self.sortear()
+        self.draw()
         self.btn_stone.setEnabled(True)
         self.btn_paper.setEnabled(True)
         self.btn_scissors.setEnabled(True)

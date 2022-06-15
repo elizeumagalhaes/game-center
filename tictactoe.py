@@ -10,7 +10,7 @@ class TicTacToe(QtWidgets.QMainWindow):
         self.count = 0
 
         # INICIANDO A JANELA
-        self.tic_tac_toe = uic.loadUi("pyqt/jogodavelha.ui")
+        self.tic_tac_toe = uic.loadUi("pyqt/tictactoe.ui")
 
         # DEFININDO OBJETOS
         self.button1 = self.tic_tac_toe.findChild(QPushButton, "btn1")
@@ -36,6 +36,9 @@ class TicTacToe(QtWidgets.QMainWindow):
         self.button8.clicked.connect(self.click)
         self.button9.clicked.connect(self.click)
         self.btn_reset.clicked.connect(self.reset)
+
+        # MENSAGEM DE INICIO
+        self.lbl_msg.setText("X Goes First!")
 
         # EXIBINDO JANELA
         self.tic_tac_toe.show()
